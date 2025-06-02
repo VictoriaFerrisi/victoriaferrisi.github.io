@@ -1,0 +1,5 @@
+theme: minimal-mistakes-jekyll
+title: Victoria test portfolio
+description: "Designs by me"
+author: victoria ferrisi
+baseurl: "/home"
