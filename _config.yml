@@ -2,4 +2,4 @@ theme: jekyll-theme-cayman
 title: Victoria test portfolio
 description: "Designs by me"
 author: victoria ferrisi
-baseurl: "/home"
+baseurl: ""
