@@ -29,6 +29,7 @@ body {
   align-items: center;
   padding: 2.5rem var(--padding-side);
   background-color: var(--bg-color);
+  margin-inline-start:5rem
 }
 
 .logo {
@@ -93,6 +94,7 @@ body {
 /* Portfolio Grid - The Engine */
 .portfolio-section {
   padding: 0 var(--padding-side) 6rem var(--padding-side);
+  margin:5rem
 }
 
 .grid-container {
@@ -100,12 +102,13 @@ body {
   /* Auto-creates columns that are at least 350px wide, and stretch to fill remaining space */
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   gap: 20px;
+  
 }
 
 .grid-item {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1 / 1; /* Forces all items to be perfect squares */
+  aspect-ratio: 3.5 / 2; /* Forces all items to be perfect squares */
   cursor: pointer;
   background-color: #eee;
 }
@@ -130,6 +133,7 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.4); /* Dark translucent background */
   display: flex;
+  flex-direction:column;
   justify-content: center;
   align-items: center;
   opacity: 0;
@@ -150,8 +154,24 @@ body {
   transition: transform 0.4s ease;
 }
 
+.overlay h3 {
+  color: #fff;
+  font-size: 1rem;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 0 1rem;
+  transform: translateY(15px); /* Starts slightly lower */
+  transition: transform 0.4s ease;
+}
+
 .grid-item:hover .overlay h2 {
   transform: translateY(0); /* Slides up on hover */
+}
+
+.contact-section{
+  padding: 0 var(--padding-side) 6rem var(--padding-side);
+  margin-inline-start: 5rem;
+  margin-inline-end: 5rem;
 }
 
 /* Footer */
